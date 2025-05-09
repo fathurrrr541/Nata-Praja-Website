@@ -134,9 +134,9 @@
                                 <div class="form-group">
                                     <label for="interest">Interested In</label>
                                     <select id="interest" name="interest">
-                                        <option value="About Us">About Us</option>
-                                        <option value="Services">Services</option>
-                                        <option value="Career">Career</option>
+                                        <option label="About Us" value="About Us">About Us</option>
+                                        <option label="Services" value="Services">Services</option>
+                                        <option label="Career" value="Career">Career</option>
                                     </select>
                                 </div>
                                 <div class="form-group">

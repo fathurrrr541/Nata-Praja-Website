@@ -114,7 +114,6 @@
 }
 
 .form-group input,
-.form-group select,
 .form-group textarea {
     font-size: .75rem;
     color: var(--text-color);
@@ -125,6 +124,11 @@
     outline: none;
     line-height: 120%; /* Samakan dengan label */
     box-sizing: border-box;
+}
+
+.form-group select {
+    border-bottom: 0.7px solid rgba(15, 41, 22, 0.521);
+    padding: 10.5px 0px;
 }
 
 .form-group textarea {

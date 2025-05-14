@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Faq</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -96,7 +97,7 @@
     <!-- Main -->
         <section id="scrolltop" class="page-cover">
             <div class="page-cover__wrapper">
-                <img src="/assets/resources/img/contact-us-cover.jpg" alt="" class="page-cover-img" loading="lazy">
+                <img src="{{ asset('resources/img/faqPage/faqCover.png') }}" alt="" class="page-cover-img" loading="lazy">
                 <div class="page-cover__overlay">
                     <div class="page-cover__overlay-top">
                         <div class="sub-title">Frequently Asked Questions</div>
@@ -165,7 +166,7 @@
                     </div>
                     <div class="cta-card-content">
                         <h2>Intrested partnering with Nata Praja?</h2>
-                        <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd asdasdasd asdasgfdhj gfbvbfdbc tgdfscv ssdf</p>
+                        <p>We’re more than just a BPO company—we’re your growth partner. From managing your customer interactions to optimizing your backend operations, we tailor our services to match your goals.</p>
                     </div>
                     <div class="cta-card-button-wrapper">
                         <a href="{{route('contact')}}" class="cta-card-button">
@@ -181,7 +182,7 @@
                     </div>
                     <div class="cta-card-content">
                         <h2>Build the future with Nata Praja?</h2>
-                        <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd</p>
+                        <p>Your journey begins with one decision—to grow. At Nata Praja, we provide a supportive environment where you can sharpen your skills, discover your strengths, and take charge of your career. Join us and turn ambition into action.</p>
                     </div>
                     <div class="cta-card-button-wrapper">
                         <a href="{{route('karir')}}" class="cta-card-button button-carrers">

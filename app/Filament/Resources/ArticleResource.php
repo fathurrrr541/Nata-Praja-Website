@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\ArticleResource\Pages;
 use App\Filament\Resources\ArticleResource\RelationManagers;
 use App\Models\Article;
+use Filament\Tables\Filters\Filter;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -21,6 +22,7 @@ use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\DateRangePicker;
 
 
 class ArticleResource extends Resource
@@ -48,16 +50,17 @@ class ArticleResource extends Resource
                         ->image()
                         ->disk('public') // pastikan ini eksplisit
                         ->directory('articles-image')
-                        ->avatar()
                         ->imagePreviewHeight('400'),  // Menampilkan preview gambar
                     DatePicker::make('created_at'),
+                    // DatePicker::make('published_at')
+                    //     ->label('Tanggal Publikasi')
+                    //     ->default(now()), // opsional: isi default hari ini
                     RichEditor::make('body')
                         ->fileAttachmentsDisk('public')
                         ->fileAttachmentsDirectory('article-content-image')
                         ->fileAttachmentsVisibility('public')
                         ->label('Isi Konten') 
                         ->columnSpanFull(),
-                    
                 ]),
             ]);
     }
@@ -67,11 +70,24 @@ class ArticleResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('title')->searchable(),
-                TextColumn::make('published_at')->date('d M Y'),
-                TextColumn::make('created_at')->date('d M Y'),
+                // TextColumn::make('published_at')->date('d M Y'),
+                TextColumn::make('created_at')
+                    ->date('d M Y')
+                    ->sortable(),
             ])
             ->filters([
-                //
+                // Filter tanggal dibuat
+                Filter::make('created_at')
+                            ->label('Filter Tanggal Dibuat')
+                            ->form([
+                                DatePicker::make('from')->label('Dari'),
+                                DatePicker::make('until')->label('Sampai'),
+                            ])
+                            ->query(function (Builder $query, array $data): Builder {
+                                return $query
+                                    ->when($data['from'], fn ($q) => $q->whereDate('created_at', '>=', $data['from']))
+                                    ->when($data['until'], fn ($q) => $q->whereDate('created_at', '<=', $data['until']));
+                            }),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

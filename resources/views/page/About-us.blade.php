@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - About Us</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -185,7 +186,7 @@
                 </div>
                 <div class="ourstory__bottom">
                     <div class="ourstory__bottom-img-wrapper">
-                        <img src="{{asset('resources/img/Our-service-page-image.png')}}" alt="" loading="lazy">
+                        <img src="{{ asset('resources/img/tentangPage/team11.png') }}" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -265,7 +266,16 @@
                         <div class="about-us__team-content-card">
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Komisaris/Budiyana.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/landingPage/Team/harnoko.png') }}" alt="" loading="lazy">
+                                </div>
+                                <div class="about-us__team-card-info">
+                                    <h3 class="about-us__team-card-name">Harnoko Martono</h3>
+                                    <p class="about-us__team-card-title">Komisaris Utama</p>
+                                </div>
+                            </div>
+                            <div class="about-us__team-card">
+                                <div class="about-us__team-card-img">
+                                    <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Budiyana</h3>
@@ -274,19 +284,10 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Komisaris/Reza.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/landingPage/Team/reza.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Reza M Thamrin</h3>
-                                    <p class="about-us__team-card-title">Komisaris</p>
-                                </div>
-                            </div>
-                            <div class="about-us__team-card">
-                                <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Komisaris/Harnoko.png') }}" alt="" loading="lazy">
-                                </div>
-                                <div class="about-us__team-card-info">
-                                    <h3 class="about-us__team-card-name">Harnoko Martono</h3>
                                     <p class="about-us__team-card-title">Komisaris</p>
                                 </div>
                             </div>
@@ -299,7 +300,7 @@
                         <div class="about-us__team-content-card">
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/Pak Rizal.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/landingPage/Team/pakRizal.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Rizal Moch Ganjar</h3>
@@ -308,7 +309,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/Pak Laudi.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team3.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Laudi Fajar Prihatmoko</h3>
@@ -317,7 +318,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/Mbak Tika.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team2.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Atikah Nur Awanis</h3>
@@ -326,7 +327,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/hani.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team6.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Hanifah Nur Aini</h3>
@@ -335,7 +336,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/Aul.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team9.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Aulia</h3>
@@ -344,7 +345,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/pungky.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team12.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Pungky Suryo</h3>
@@ -353,7 +354,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/dewi.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team8.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Dewi Asiyah</h3>
@@ -362,7 +363,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/arga.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team10.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Arga Putra Fani</h3>
@@ -371,7 +372,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/Mas Cadipa.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team1.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Cadipa Sidiq</h3>
@@ -380,7 +381,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/fatur.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team7.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Fathur</h3>
@@ -389,7 +390,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/Mas Indra.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team5.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Indra</h3>
@@ -398,7 +399,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{ asset('resources/img/Management Team/Surya.png') }}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/tentangPage/team4.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Dewangga Surya</h3>

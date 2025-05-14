@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Layanan</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -43,7 +44,7 @@
         <nav class="navbig">
             <div class="navbig__wrapper flxcenter-vertical-spcbtwn">
                 <div class="navbig-left logo-medium">
-                    <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                    <a href="{{'/'}}"><img src="{{ asset('resources/img/LOGO NPS GREEN.png') }}" alt="NPS Logo" class="logo" id="logoBig2"></a>
                 </div>
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
                     <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>
@@ -59,7 +60,7 @@
         </nav>
         <nav class="navmobile">
             <div class="navbig-left logo-medium">
-                <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                <a href="/"><a href="{{'/'}}"><img src="{{ asset('resources/img/LOGO NPS GREEN.png') }}" alt="NPS Logo" class="logo" id="logoMobile2"></a> 
             </div>
             <div class="hamburger-menu antimainstream" id="hamburger">
                 <a class="button-cta-1" style="color: rgb(15, 41, 22);">Menu</a>
@@ -94,7 +95,7 @@
 
         <section id="scrolltop" class="page-cover">
             <div class="page-cover__wrapper">
-                <img src="{{asset('resources/img/service-page-headline.jpg')}}" alt="" class="page-cover-img" loading="lazy">
+                <img src="{{asset('resources/img/page cover/Services_Cover.png')}}" alt="" class="page-cover-img" loading="lazy">
                 <div class="page-cover__overlay">
                     <div class="page-cover__overlay-top">
                         <div class="sub-title">Our service</div>
@@ -122,7 +123,7 @@
                 </div>
                 <div class="overview__bottom">
                     <div class="overview__bottom-img-wrapper">
-                        <img src="{{asset('resources/img/Our-service-page-image.png')}}" alt="" loading="lazy">
+                        <img src="{{asset('resources/img/layananPage/descriptionImage.png')}}" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -134,33 +135,11 @@
             <div class="client ">
                 <div class="client__wrapper">
                     <div class="client__container">
-                        <div class="client__slide hover1">
-                            <img src="{{ asset('resources/img/PLN INSURANCE.png') }}" alt="" height="30px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{ asset('resources/img/INDONESIA POWER.png') }}" alt="" height="30px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/NUSANTARA POWER.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/ENJINERING.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/ENERGI PRIMER.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/DP PLN.png')}}" alt="" height="50px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/HELEYORA POWER.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/CAR (1).png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/PINHOME.png')}}" alt="" height="40px">
-                        </div>
+                        @foreach ($clientLogos as $logo)
+                            <div class="client__slide hover1">
+                                <img src="{{ asset('storage/' . $logo->logo_path) }}" alt="{{ $logo->logo_name }}" height="30px">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -293,7 +272,7 @@
                         </div>
                         <div class="cta-card-content">
                             <h2>Intrested partnering with Nata Praja?</h2>
-                            <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd asdasdasd asdasgfdhj gfbvbfdbc tgdfscv ssdf</p>
+                            <p>We’re more than just a BPO company—we’re your growth partner. From managing your customer interactions to optimizing your backend operations, we tailor our services to match your goals.</p>
                         </div>
                         <div class="cta-card-button-wrapper">
                             <a href="{{route('contact')}}" class="cta-card-button">
@@ -309,7 +288,7 @@
                         </div>
                         <div class="cta-card-content">
                             <h2>Build the future with Nata Praja?</h2>
-                            <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd</p>
+                            <p>Your journey begins with one decision—to grow. At Nata Praja, we provide a supportive environment where you can sharpen your skills, discover your strengths, and take charge of your career. Join us and turn ambition into action.</p>
                         </div>
                         <div class="cta-card-button-wrapper">
                             <a href="{{route('karir')}}" class="cta-card-button button-carrers">
@@ -328,30 +307,80 @@
     <!-- Main -->
 
     <!-- Footer -->
-    <footer class="footer">        
-        <div class="footer__containerdesktop desktop__footer flx2col-spcbtwn">
-            <div class="footer__left">
-                <h2>#Jadi yang kamu butuhkan.</h2>
-                <div class="profil-deskription">
+        <footer class="footer">
+            <div class="footer__containerdesktop desktop__footer flx2col-spcbtwn">
+                <div class="footer__left">
+                    <h2>#Jadi yang kamu butuhkan.</h2>
+                    <div class="profil-deskription">
+                        <div class="footer__logo">
+                            <div class="footer__contenttoplogo">
+                                <img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="" class="logowhite">
+                            </div>
+                            <div class="footer__logotype">NATA PRAJA</div>
+                        </div>
+                        <div class="logo-caption">
+                            "PT Nata Praja Solusindo adalah perusahaan yang berorientasi pada pelanggan. Kami
+                            memahami bahwa setiap klien memiliki kebutuhan yang beragam, oleh karena itu kami
+                            menawarkan solusi yang disesuaikan dengan kebutuhan spesifik masing-masing klien."
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer-right-top">
+                        <div class="footer-nav-company footer-nav-wrapper">
+                            <ul class="footer-nav-head">Company</ul>
+                            <ul class="footer-nav-list">
+                                <li><a href="/" class="footer-nav-items">Home</a></li>
+                                <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
+                                <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
+                                <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
+                                <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-work footer-nav-wrapper">
+                            <ul class="footer-nav-head">Work</ul>
+                            <ul class="footer-nav-list">
+                                <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
+                                <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-social footer-nav-wrapper">
+                            <ul class="footer-nav-head">Social</ul>
+                            <ul class="footer-nav-list">
+                                <li><a href="https://www.instagram.com/ptnataprajasolusindo/" target="_blank" class="footer-nav-items">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/nata-praja-solusindo" target="_blank" class="footer-nav-items">Linkedln</a></li>
+                                <li><a href="https://www.facebook.com/nataprajasolusindo.NPS" target="_blank" class="footer-nav-items">Facebook</a></li>
+                                <li><a href="https://www.youtube.com/@NPSJogja" target="_blank" class="footer-nav-items">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-right-bottom">
+                        <div class="footer-nav-info">
+                            <ul class="footer-address">Kledokan RT 01/ RW 07, Umbulmartani, Kec. Ngemplak, Kab Sleman, Daerah Istimewa Yogyakarta</ul>
+                            <span class="line"></span>
+                            <ul class="contact">
+                                <li>(0274) 6000 027</li>
+                                <li>nps@natapraja.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__containermobile">
+                <div class="footer-mobile-one">
                     <div class="footer__logo">
                         <div class="footer__contenttoplogo">
                             <img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="" class="logowhite">
                         </div>
                         <div class="footer__logotype">NATA PRAJA</div>
                     </div>
-                    <div class="logo-caption">
-                        "PT Nata Praja Solusindo adalah perusahaan yang berorientasi pada pelanggan. Kami
-                        memahami bahwa setiap klien memiliki kebutuhan yang beragam, oleh karena itu kami
-                        menawarkan solusi yang disesuaikan dengan kebutuhan spesifik masing-masing klien."
-                    </div>
                 </div>
-            </div>
-            <div class="footer__right">
-                <div class="footer-right-top">
+                <div class="footer-mobile-two">
                     <div class="footer-nav-company footer-nav-wrapper">
                         <ul class="footer-nav-head">Company</ul>
                         <ul class="footer-nav-list">
-                            <li><a href="/" class="footer-nav-items">Home</a></li>
+                            <li><a href="/index.html" class="footer-nav-items">Home</a></li>
                             <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
                             <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
                             <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
@@ -365,85 +394,33 @@
                             <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="footer-nav-social footer-nav-wrapper">
+                </div>
+                <div class="footer-mobile-three">
+                    <div class="h2-wrapper">
+                        <h2 class="footer-mobile-three-h2">#Jadi yang kamu butuhkan.</h2>
+                    </div>
+                </div>
+                <div class="footer-mobile-four">
+                    <div class="footer-navmobile-social">
                         <ul class="footer-nav-head">Social</ul>
-                        <ul class="footer-nav-list">
-                            <li><a href="" class="footer-nav-items">Instagram</a></li>
-                            <li><a href="" class="footer-nav-items">Linkedln</a></li>
-                            <li><a href="" class="footer-nav-items">Facebook</a></li>
-                            <li><a href="" class="footer-nav-items">Youtube</a></li>
+                        <ul class="footer-navmobile-list">
+                            <li><a href="https://www.instagram.com/ptnataprajasolusindo/" target="_blank" class="footer-navmobile-items">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/nata-praja-solusindo" target="_blank" class="footer-nav-items">Linkedln</a></li>
+                            <li><a href="https://www.facebook.com/nataprajasolusindo.NPS" target="_blank" class="footer-nav-items">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@NPSJogja" target="_blank" class="footer-nav-items">Youtube</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer-right-bottom">
-                    <div class="footer-nav-info">
-                        <ul class="footer-address">Kledokan RT 01/ RW 07, Umbulmartani, Kec. Ngemplak, Kab Sleman, Daerah Istimewa Yogyakarta</ul>
-                        <span class="line"></span>
-                        <ul class="contact">
-                            <li>(0274) 6000 027</li>
-                            <li>nps@natapraja.com</li>
-                        </ul>
-                    </div>
+                <div class="footer-mobile-five">
+                    <div class="copyright footer-nav-head">&copy 2024, Nata Praja, All Rights Reserved.</div>
+                    <a href="#hero" class="scrolltop">
+                        <p>Back to top</p>
+                        <i class="fa-solid fa-arrow-up"></i>
+                    <a>
                 </div>
             </div>
-        </div>
-
-        <div class="footer__containermobile">
-            <div class="footer-mobile-one">
-                <div class="footer__logo">
-                    <div class="footer__contenttoplogo">
-                        <img src="./assets/resources/img/LOGO NPS WHITE.png" alt="" class="logowhite">
-                    </div>
-                    <div class="footer__logotype">NATA PRAJA</div>
-                </div>
-            </div>
-            <div class="footer-mobile-two">
-                <div class="footer-nav-company footer-nav-wrapper">
-                    <ul class="footer-nav-head">Company</ul>
-                    <ul class="footer-nav-list">
-                        <li><a href="/" class="footer-nav-items">Home</a></li>
-                        <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
-                        <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
-                        <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
-                        <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-work footer-nav-wrapper">
-                    <ul class="footer-nav-head">Work</ul>
-                    <ul class="footer-nav-list">
-                        <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
-                        <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-mobile-three">
-                <div class="h2-wrapper">
-                    <h2 class="footer-mobile-three-h2">#Jadi yang kamu butuhkan.</h2>
-                </div>
-            </div>
-            <div class="footer-mobile-four">
-                <div class="footer-navmobile-social">
-                    <ul class="footer-nav-head">Social</ul>
-                    <ul class="footer-navmobile-list">
-                        <li><a href="" class="footer-navmobile-items">Instagram</a></li>
-                        <li><a href="" class="footer-nav-items">Linkedln</a></li>
-                        <li><a href="" class="footer-nav-items">Facebook</a></li>
-                        <li><a href="" class="footer-nav-items">Youtube</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-mobile-five">
-                <div class="copyright footer-nav-head">&copy 2024, Nata Praja, All Rights Reserved.</div>
-                <a href="#hero" class="scrolltop">
-                    <p>Back to top</p>
-                    <i class="fa-solid fa-arrow-up"></i>
-                <a>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer -->
-
-     
+        </footer>
+        <!-- Footer -->
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

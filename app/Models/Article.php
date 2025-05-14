@@ -16,6 +16,7 @@ class Article extends Model
         'excerpt', 
         'thumbnail', 
         'published_at',
+        'created_at',
         'body',
     ];
 

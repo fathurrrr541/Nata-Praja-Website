@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Best BPO in Town</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -40,7 +41,7 @@
         <nav class="navbig">
             <div class="navbig__wrapper flxcenter-vertical-spcbtwn">
                 <div class="navbig-left logo-medium">
-                    <a href="{{'/'}}"><h1>NPS</h1></a> 
+                    <a href="{{'/'}}"><img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="NPS Logo" class="logo" id="logoBigIndex"></a> 
                 </div>
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn">
                     <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>
@@ -56,7 +57,7 @@
         </nav>
         <nav class="navmobile">
             <div class="navbig-left logo-medium">
-                <a href="/"><h1>NPS</h1></a> 
+                <a href="/"><img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="NPS Logo" class="logo" id="logoMobileIndex"></a> 
             </div>
             <div class="hamburger-menu antimainstream" id="hamburger">
                 <a class="button-cta-1">Menu</a>
@@ -154,13 +155,13 @@
                 <div class="services__wrapper flx2col-spcbtwn">
                     <div class="services__left">
                         <div class="services-img-wrapper">
-                            <img src="{{asset('resources/img/services/callcenter.jpg')}}" alt="" data-index="1" class="active">
-                            <img src="{{asset('resources/img/services/verivication.jpg')}}" alt="" data-index="2">
-                            <img src="{{asset('resources/img/services/verifikasi.jpg')}}" alt="" data-index="3">
-                            <img src="{{asset('resources/img/services/telemarketing.jpg')}}" alt="" data-index="4">
-                            <img src="{{asset('resources/img/services/KYC.jpg')}}" alt="" data-index="5">
-                            <img src="{{asset('resources/img/services/desk collection.jpg')}}" alt="" data-index="6">
-                            <img src="{{asset('resources/img/Team/venrick-azcueta-17qa33WJ6zI-unsplash.jpg')}}" alt="" data-index="7">
+                            <img src="{{asset('resources/img/landingPage/Services/callCenter.png')}}" alt="" data-index="1" class="active">
+                            <img src="{{asset('resources/img/landingPage/Services/validation.jpg')}}" alt="" data-index="2">
+                            <img src="{{asset('resources/img/landingPage/Services/dataEntry.jpg')}}" alt="" data-index="3">
+                            <img src="{{asset('resources/img/landingPage/Services/telemarketing.jpg')}}" alt="" data-index="4">
+                            <img src="{{asset('resources/img/landingPage/Services/liveChat.jpg')}}" alt="" data-index="5">
+                            <img src="{{asset('resources/img/landingPage/Services/deskCollection.jpg')}}" alt="" data-index="6">
+                            <img src="{{asset('resources/img/landingPage/Services/kyc.jpg')}}" alt="" data-index="7">
                         </div>
                     </div>
                     <div class="services__right flx2row">
@@ -253,7 +254,7 @@
                     </div>
                 </div>
             </div>
-
+            {{-- SERVICE MOBILE --}}
             <div class="services-mobile">
                 <div class="services-mobile__wrapper-mobile flx2row">
                     <div class="services-mobile__left-mobile">
@@ -315,6 +316,8 @@
                     </div>
                 </div>
             </div>
+            {{-- SERVICE MOBILE --}}
+            
             <!--OUR-SERVICE-->
             
             <!-- Team -->
@@ -329,22 +332,22 @@
                     </div>
                     <ul class="team__slider">
                         <li class="team_person">
-                            <img src="{{ asset('resources/img/Komisaris/Budiyana.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="1701" height="1560">
                             <h3 class="person-name">Budiyana</h3>
                             <p class="person-position">Komisaris</p>
                         </li>
                         <li class="team_person">
-                            <img src="{{ asset('resources/img/Komisaris/Harnoko.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <img src="{{ asset('resources/img/landingPage/Team/harnoko.png') }}" alt="" loading="lazy" width="1701" height="1560">
                             <h3 class="person-name">Harnoko Martono</h3>
                             <p class="person-position">Komisaris</p>
                         </li>
                         <li class="team_person">
-                            <img src="{{ asset('resources/img/Komisaris/Reza.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <img src="{{ asset('resources/img/landingPage/Team/reza.png') }}" alt="" loading="lazy" width="1701" height="1560">
                             <h3 class="person-name">Reza M Thamrin</h3>
                             <p class="person-position">Komisaris</p>
                         </li>
                         <li class="team_person">
-                            <img src="{{ asset('resources/img/Management Team/Pak Rizal.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <img src="{{ asset('resources/img/landingPage/Team/pakRizal.png') }}" alt="" loading="lazy" width="1701" height="1560">
                             <h3 class="person-name">Rizal M Ganjar</h3>
                             <p class="person-position">CEO</p>
                         </li>
@@ -363,7 +366,7 @@
                         </div>
                         <div class="cta-card-content">
                             <h2>Intrested partnering with Nata Praja?</h2>
-                            <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd asdasdasd asdasgfdhj gfbvbfdbc tgdfscv ssdf</p>
+                            <p>We’re more than just a BPO company—we’re your growth partner. From managing your customer interactions to optimizing your backend operations, we tailor our services to match your goals.</p>
                         </div>
                         <div class="cta-card-button-wrapper">
                             <a href="{{route('contact')}}" class="cta-card-button">
@@ -379,7 +382,7 @@
                         </div>
                         <div class="cta-card-content">
                             <h2>Build the future with Nata Praja?</h2>
-                            <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd</p>
+                            <p>Your journey begins with one decision—to grow. At Nata Praja, we provide a supportive environment where you can sharpen your skills, discover your strengths, and take charge of your career. Join us and turn ambition into action.</p>
                         </div>
                         <div class="cta-card-button-wrapper">
                             <a href="{{route('karir')}}" class="cta-card-button button-carrers">
@@ -415,7 +418,7 @@
                                 <img src="{{ asset('storage/' . $article->thumbnail) }}" alt="artikelCover" class="image-carousel-wrapper" loading="lazy">
                                 <div class="artikel-info">
                                     <p class="category">ARTIKEL</p>
-                                    <p class="date">{{ \Carbon\Carbon::parse($article->published_at)->format('d F Y') }}</p>
+                                    <p class="date">{{ \Carbon\Carbon::parse($article->created_at)->format('d F Y') }}</p>
                                 </div>
                                 <h3>{{ Str::limit($article->title, 130, '...') }}</h3>
                             </a>
@@ -436,7 +439,6 @@
 
             <!-- Footer -->
             <footer class="footer">
-                
                 <div class="footer__containerdesktop desktop__footer flx2col-spcbtwn">
                     <div class="footer__left">
                         <h2>#Jadi yang kamu butuhkan.</h2>
@@ -476,10 +478,10 @@
                             <div class="footer-nav-social footer-nav-wrapper">
                                 <ul class="footer-nav-head">Social</ul>
                                 <ul class="footer-nav-list">
-                                    <li><a href="" class="footer-nav-items">Instagram</a></li>
-                                    <li><a href="" class="footer-nav-items">Linkedln</a></li>
-                                    <li><a href="" class="footer-nav-items">Facebook</a></li>
-                                    <li><a href="" class="footer-nav-items">Youtube</a></li>
+                                    <li><a href="https://www.instagram.com/ptnataprajasolusindo/" target="_blank" class="footer-nav-items">Instagram</a></li>
+                                    <li><a href="https://www.linkedin.com/company/nata-praja-solusindo" target="_blank" class="footer-nav-items">Linkedln</a></li>
+                                    <li><a href="https://www.facebook.com/nataprajasolusindo.NPS" target="_blank" class="footer-nav-items">Facebook</a></li>
+                                    <li><a href="https://www.youtube.com/@NPSJogja" target="_blank" class="footer-nav-items">Youtube</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -533,10 +535,10 @@
                         <div class="footer-navmobile-social">
                             <ul class="footer-nav-head">Social</ul>
                             <ul class="footer-navmobile-list">
-                                <li><a href="" class="footer-navmobile-items">Instagram</a></li>
-                                <li><a href="" class="footer-nav-items">Linkedln</a></li>
-                                <li><a href="" class="footer-nav-items">Facebook</a></li>
-                                <li><a href="" class="footer-nav-items">Youtube</a></li>
+                                <li><a href="https://www.instagram.com/ptnataprajasolusindo/" target="_blank" class="footer-navmobile-items">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/nata-praja-solusindo" target="_blank" class="footer-nav-items">Linkedln</a></li>
+                                <li><a href="https://www.facebook.com/nataprajasolusindo.NPS" target="_blank" class="footer-nav-items">Facebook</a></li>
+                                <li><a href="https://www.youtube.com/@NPSJogja" target="_blank" class="footer-nav-items">Youtube</a></li>
                             </ul>
                         </div>
                     </div>

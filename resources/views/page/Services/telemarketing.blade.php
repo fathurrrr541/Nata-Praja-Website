@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Telemarketing</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -100,7 +101,7 @@
      <main class="main-content main-container our-service-container">
         <section id="scrolltop" class="page-cover">
             <div class="page-cover__wrapper">
-                <img src="/assets/resources/img/services/telemarketing.jpg" alt="" class="page-cover-img" loading="lazy">
+                <img src="{{asset('resources/img/services/4.jpg')}}" alt="" class="page-cover-img" loading="lazy">
                 <div class="page-cover__overlay">
                     <div class="page-cover__overlay-top">
                         <div class="sub-title">Our service</div>
@@ -128,7 +129,7 @@
                     </div>
                     <div class="ourstory__bottom">
                         <div class="ourstory__bottom-img-wrapper">
-                            <img src="/assets/resources/img/Our-service-page-image.png" alt="" loading="lazy">
+                            <img src="{{asset('resources/img/landingPage/Services/telemarketing.jpg')}}" alt="" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -228,7 +229,7 @@
                 </div>
                 <div class="servicecard-wrapper">
                     <div class="servicecard-wrapper-top">
-                        <a href="/assets/page/Services/callcenter.html" class="ourservice-card">
+                        <a href="{{route('callcenter')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -242,7 +243,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/dataentry.html" class="ourservice-card">
+                        <a href="{{route('dataentry')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -256,7 +257,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/verification&validation.html" class="ourservice-card">
+                        <a href="{{route('verification-validation')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -270,9 +271,23 @@
                                 </div>
                             </div>
                         </a>
+                        <a href="{{route('telemarketing')}}" class="ourservice-card">
+                            <div class="ourservice-card__overlay"></div>
+                            <div href="" class="ourservice-card__content">
+                                <div class="ourservice-card__content-top">
+                                    <h3>Telemarketing</h3>
+                                    <p>Targeted campaigns to expand market reach, increase sales, and understand customer needs effectively.</p>
+                                </div>
+                                <div class="ourservice-card__content-bot">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="servicecard-wrapper-bot">
-                        <a href="/assets/page/Services/livechat.html" class="ourservice-card">
+                        <a href="{{route('livechat')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -286,7 +301,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/deskcollection.html" class="ourservice-card">
+                        <a href="{{route('deskcollection')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -300,7 +315,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/kyc.html" class="ourservice-card">
+                        <a href="{{route('kyc')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">

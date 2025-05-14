@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Gallery</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -93,7 +94,7 @@
     <main class="main-content main-container our-service-container">
         <section id="scrolltop" class="page-cover">
             <div class="page-cover__wrapper">
-                <img src="/assets/resources/img/service-page-headline.jpg" alt="" class="page-cover-img" loading="lazy">
+                <img src="{{asset('resources/img/page cover/Gallery_Cover.png')}}" alt="" class="page-cover-img" loading="lazy">
                 <div class="page-cover__overlay">
                     <div class="page-cover__overlay-top">
                         <div class="sub-title">Our Gallery</div>
@@ -110,22 +111,19 @@
             <div class="gallery__wrapper">
                 <div class="gallerycontentCard">
                     <div class="glc-left">
-                        <h1>Our Bulding</h1>
-                    </div>
-                    <div class="glc-right">
-                        <img src="/assets/resources/img/bulding/IMG_20220819_200323.jpg" loading="lazy" alt="">
-                        <img src="/assets/resources/img/bulding/IMG_20221022_154144.jpg" loading="lazy" alt="">
-                        <img src="/assets/resources/img/bulding/IMG_20220827_230038.jpg" loading="lazy" alt="">
-                    </div>
-                </div>
-                <div class="gallerycontentCard">
-                    <div class="glc-left">
                         <h1>Our Facilities</h1>
                     </div>
                     <div class="glc-right">
-                        <img src="/assets/resources/img/bulding/IMG_20220819_200323.jpg" loading="lazy" alt="">
-                        <img src="/assets/resources/img/bulding/IMG_20221022_154144.jpg" loading="lazy" alt="">
-                        <img src="/assets/resources/img/bulding/IMG_20220827_230038.jpg" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/2.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/3.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/4.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/5.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/6.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/7.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/8.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/9.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/facility/10.JPG')}}" loading="lazy" alt="">
+                        
                     </div>
                 </div>
                 <div class="gallerycontentCard">
@@ -133,9 +131,11 @@
                         <h1>Our Activities</h1>
                     </div>
                     <div class="glc-right">
-                        <img src="/assets/resources/img/bulding/IMG_20220819_200323.jpg" loading="lazy" alt="">
-                        <img src="/assets/resources/img/bulding/IMG_20221022_154144.jpg" loading="lazy" alt="">
-                        <img src="/assets/resources/img/bulding/IMG_20220827_230038.jpg" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/activity/1.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/activity/2.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/activity/3.png')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/activity/4.JPG')}}" loading="lazy" alt="">
+                        <img src="{{asset('resources/img/activity/5.JPG')}}" loading="lazy" alt="">
                     </div>
                 </div>
             </div>

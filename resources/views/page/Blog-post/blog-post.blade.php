@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Artikel</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -85,14 +86,14 @@
     <!-- breadcrumb -->
     <div class="breadcrumb">
         <div class="breadcrumb__wrapper">
-            <a href="/index.html" class="breadcrumb__icon"><i class="fa-solid fa-house"></i></a>
+            <a href="/" class="breadcrumb__icon"><i class="fa-solid fa-house"></i></a>
             <div class="breadcrumb__icon2">></div>
             <div class="breadcrumb__info">
-                <a href="/assets/page/artikel.html">Company Article</a>
+                <a href="{{route('artikel')}}">Company Article</a>
             </div>
             <div class="breadcrumb__icon2">></div>
             <div class="breadcrumb__info">
-                <a href="/assets/page/Blog-post/blog-post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi tempora atque repellendus.</a>
+                <a href="/assets/page/Blog-post/blog-post.html">{{ $article->title }}</a>
             </div>
         </div>
      </div>
@@ -123,7 +124,7 @@
                 </div>
             </div>
             <article id="articleContent" class="articlePage__content">
-            {{$article->body}}
+            {!! $article->body !!}
             </article>
         </section>
      </section>

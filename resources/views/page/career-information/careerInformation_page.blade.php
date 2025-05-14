@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Business Development</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -85,14 +86,14 @@
     <!-- breadcrumb -->
     <div class="breadcrumb">
         <div class="breadcrumb__wrapper">
-            <a href="/index.html" class="breadcrumb__icon"><i class="fa-solid fa-house"></i></a>
+            <a href="/" class="breadcrumb__icon"><i class="fa-solid fa-house"></i></a>
             <div class="breadcrumb__icon2">></div>
             <div class="breadcrumb__info">
-                <a href="/assets/page/career.html">Career</a>
+                <a href="{{route('karir')}}">Career</a>
             </div>
             <div class="breadcrumb__icon2">></div>
             <div class="breadcrumb__info">
-                <a href="/assets/page/career-information/careerInformation_page.html">Business Development</a>
+                <a href="/assets/page/career-information/careerInformation_page.html">{{ $jobs->role }}</a>
             </div>
         </div>
      </div>
@@ -102,7 +103,7 @@
         <section id="scrolltop" class="career-page-cover">
             <div class="career-page-cover__wrapper">
                 <div class="career-page-cover-img">
-                    <img src="/assets/resources/img/article-cover.jpg" alt="" class="page-cover-img" loading="lazy">
+                    <img src="{{asset('resources/img/karirPage/hiring.png')}}" alt="" class="page-cover-img" loading="lazy">
                 </div>
                 <div class="career-page-cover__content">
                     <div class="career-page-cover__overlay-top">
@@ -118,26 +119,26 @@
                 <artikel class="careercontent__requirement">
                     <H2>Job Responsibility</H2>
                     <ul>
-                        <li>{{ $jobs->responsibilities }}</li>
+                        <li>{!! $jobs->responsibilities !!}</li>
                     </ul>
                     <H2>Educational Requirement</H2>
                     <ul>
-                        <li>{{ $jobs->education }}</li>
+                        <li>{!! $jobs->education !!}</li>
                     </ul>
                     <H2>Experience Requirement</H2>
                     <ul>
-                        <li>{{ $jobs->experience}}</li>
+                        <li>{!! $jobs->experience !!}</li>
                     </ul>
                     <H2>Additional Requirement</H2>
                     <ul>
-                        <li>{{$jobs->additional}}</li>
+                        <li>{!! $jobs->additional !!}</li>
                     </ul>
                     <H2>Others Benefits</H2>
                     <ul>
-                        <li>{{$jobs->benefits}}</li>
+                        <li>{!! $jobs->benefits !!}</li>
                     </ul>
                 </artikel>
-                <a href="#" class="careerbutton">Daftar</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScinPgjwoe6IGowP-jjXNk20Yq9Z7WLkfyWCpkUM9dN7f1Djw/viewform?usp=sharing" class="careerbutton">Daftar</a>
             </div>
             <div class="careercontent__right">
                 <div class="careercard">
@@ -193,7 +194,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="careerbutton2">Daftar</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScinPgjwoe6IGowP-jjXNk20Yq9Z7WLkfyWCpkUM9dN7f1Djw/viewform?usp=sharing" class="careerbutton2">Daftar</a>
         </section>
     </main>
 

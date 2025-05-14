@@ -36,6 +36,7 @@ class HomepageSettingResource extends Resource
             FileUpload::make('hero_video_path')
                 ->disk('public')
                 ->directory('homepage')
+                ->maxSize(10000)
                 ->acceptedFileTypes(['video/mp4'])
                 ->afterStateUpdated(function ($state, callable $set) {
                     $set('hero_video_name', basename($state));

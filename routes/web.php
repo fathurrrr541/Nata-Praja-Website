@@ -11,14 +11,15 @@ use Filament\Facades\Filament;
 
 Route::get('/', function () {
     $setting = HomepageSetting::first(); // ini ambil data pertama dari tabel
-    $articles = \App\Models\Article::orderBy('published_at', 'desc')->get();
+    $articles = \App\Models\Article::orderBy('created_at', 'desc')->get();
     $clientLogos = \App\Models\ClientLogo::latest()->get();
     // $job = \App\Models\Pekerjaan::orderBy('published_at', 'desc')->get();
     return view('index', compact('setting', 'articles', 'clientLogos' ));
 });
 
 Route::get('/layanan', function () {
-    return view('page.our-service');
+    $clientLogos = \App\Models\ClientLogo::latest()->get();
+    return view('page.our-service', compact('clientLogos'));
 })->name('layanan');
 
 Route::get('/aboutUs', function () {
@@ -48,7 +49,7 @@ Route::get('/faq', function () {
 })->name('faq');
 
 Route::get('/artikel', function () {
-    $articles = \App\Models\Article::orderBy('published_at', 'desc')->get();
+    $articles = \App\Models\Article::orderBy('created_at', 'desc')->get();
     return view('page.artikel', compact('articles'));
 })->name('artikel');
 

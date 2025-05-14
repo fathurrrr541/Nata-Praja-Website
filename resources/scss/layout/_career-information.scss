@@ -13,6 +13,16 @@
             flex-direction: column;
             gap: .75rem;
 
+            ul {
+                ul {   
+                    margin-left: 1rem;
+                    margin-bottom: 1rem;
+                    line-height: 1.75rem;
+                    font-size: 1rem;
+                    list-style: square;
+                }
+            }
+
             h2 {
                 margin-top: 10px;
                 font-size: 1.5rem;

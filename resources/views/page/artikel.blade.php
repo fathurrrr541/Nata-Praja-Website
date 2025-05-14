@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Artikel</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -123,7 +124,7 @@
                             </div>
                             <div class="article-card2-info">
                                 <p class="article-card2-theme">Artikel</p>
-                                <p class="article-card2-date">{{ \Carbon\Carbon::parse($article->published_at)->format('d F Y') }}</p>
+                                <p class="article-card2-date">{{ \Carbon\Carbon::parse($article->created_at)->format('d F Y') }}</p>
                             </div>
                             <div class="article-card2-content">
                                 <h3 class="article-card2-heading">{{ Str::limit($article->title, 130, '...') }}</h3>

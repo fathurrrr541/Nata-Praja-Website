@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Contact Us</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -98,7 +99,7 @@
     <!-- Main -->
         <section id="scrolltop" class="page-cover">
             <div class="page-cover__wrapper">
-                <img src="/assets/resources/img/contact-us-cover.jpg" alt="" class="page-cover-img" loading="lazy">
+                <img src="{{ asset('resources/img/contactusCover.png') }}" alt="" class="page-cover-img" loading="lazy">
                 <div class="page-cover__overlay">
                     <div class="page-cover__overlay-top">
                         <div class="sub-title">Contact us</div>

@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 /// Ambil elemen header
 const navBig = document.querySelector(".navbig");
 const navMobile = document.querySelector(".navmobile");
+const logoBig1 = document.getElementById("logoBigIndex");
+const logoMobile1 = document.getElementById("logoMobile");
 
 // Variabel untuk menyimpan posisi scroll sebelumnya
 let lastScrollY = window.scrollY;
@@ -67,22 +69,26 @@ let lastScrollY = window.scrollY;
 function updateHeader() {
   const currentScroll = window.scrollY;
 
-  // Update untuk navbig
+  // Desktop logo change
   if (currentScroll > 50) {
     navBig.classList.remove("transparent");
     navBig.classList.add("scrolled");
+    logoBig1.src = "/resources/img/LOGO NPS GREEN.png";
   } else {
     navBig.classList.remove("scrolled");
     navBig.classList.add("transparent");
+    logoBig1.src = "/resources/img/LOGO NPS WHITE.png";
   }
 
-  // Update untuk navmobile
+  // Mobile logo change
   if (currentScroll > 0) {
     navMobile.classList.remove("transparent");
     navMobile.classList.add("scrolled");
+    logoMobile1.src = "/resources/img/LOGO NPS GREEN.png";
   } else {
     navMobile.classList.remove("scrolled");
     navMobile.classList.add("transparent");
+    logoMobile1.src = "/resources/img/LOGO NPS WHITE.png";
   }
 
   // Tambahkan atau hapus kelas "hidden" berdasarkan arah scroll (untuk kedua header)
@@ -110,17 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // Tambahkan event listener untuk scroll
 window.addEventListener("scroll", updateHeader);
 
-
-// Jalankan logika saat DOM selesai dimuat
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.scrollY <= 50) {
-    header.classList.add("transparent");
-  }
-  updateHeader(); // Periksa kondisi awal
-});
-
-// Tambahkan event listener untuk scroll
-window.addEventListener("scroll", updateHeader);
 
 
 //mobile nav

@@ -21,6 +21,7 @@ use Filament\Tables\Columns\DateColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\DateTimeColumn;
 use Filament\Tables\Filters\SelectFilter;
+use Filament\Forms\Components\RichEditor;
 
 class PekerjaanResource extends Resource
 {
@@ -47,13 +48,48 @@ class PekerjaanResource extends Resource
                     TextInput::make('position')->label('Posisi'),
                     TextInput::make('salary')->label('Gaji'),
                     DatePicker::make('deadline')->label('Batas Akhir Pendaftaran'),
+                    Textarea::make('cover_description')->label('Deskripsi Singkat'),
                 ]),
-                Textarea::make('cover_description')->label('Deskripsi Singkat'),
-                Textarea::make('responsibilities')->label('Tanggung Jawab'),
-                Textarea::make('education')->label('Kualifikasi Pendidikan'),
-                Textarea::make('experience')->label('Pengalaman yang Dibutuhkan'),
-                Textarea::make('additional')->label('Informasi Tambahan'),
-                Textarea::make('benefits')->label('Keuntungan / Benefit'),
+                RichEditor::make('responsibilities')
+                    ->disableToolbarButtons([
+                        'blockquote',
+                        'strike',
+                        'attachFiles',
+                    ])
+                    ->label('Tanggung Jawab')
+                    ->columnSpanFull(),
+                RichEditor::make('education')
+                    ->disableToolbarButtons([
+                            'blockquote',
+                            'strike',
+                            'attachFiles',
+                        ])
+                    ->label('Kualifikasi Pendidikan')
+                    ->columnSpanFull(),
+                RichEditor::make('experience')
+                    ->disableToolbarButtons([
+                            'blockquote',
+                            'strike',
+                            'attachFiles',
+                        ])
+                    ->label('Pengalaman yang Dibutuhkan')
+                    ->columnSpanFull(),
+                RichEditor::make('benefits')
+                    ->disableToolbarButtons([
+                            'blockquote',
+                            'strike',
+                            'attachFiles',
+                        ])
+                    ->label('Keuntungan / Benefit')
+                    ->columnSpanFull(),
+                RichEditor::make('additional')
+                    ->disableToolbarButtons([
+                            'blockquote',
+                            'strike',
+                            'attachFiles',
+                        ])
+                    ->label('Informasi Tambahan')
+                    ->columnSpanFull(),
             ]);
     }
 

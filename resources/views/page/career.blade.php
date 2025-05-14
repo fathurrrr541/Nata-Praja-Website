@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nata Praja - Career</title>
+    <link rel="icon" href="{{asset('resources/img/Favicon.ico')}}" type="image/x-icon">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f1934f818b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
@@ -21,7 +22,6 @@
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
-
     <div class="overlay">
         <div class="loader">
             <svg class="loading-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370.88 317.35"><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M191.57,46.46C139.28-32.77,1.05,2.07,3.53,114.18v93.7c0,13.54,12.44,19.89,24.78,19.89,12,0,25-6.58,25-19.79.06-20.47.4-76.16.17-94-.79-64.19,98.79-71.93,108.46-5.47l.34,184.1c0,13.83,11.78,21.05,24.88,21.22s24.91-7.38,24.91-21.25V189.77a98.88,98.88,0,0,0,155.31-81.2C367.38,14.87,249.44-25.13,191.57,46.46Zm2.66,243.89c0,3.89-3.67,5.73-7.14,5.73s-7.08-1.81-7.08-5.66l-.26-141.16a118.48,118.48,0,0,0,14.48,24.86ZM268.5,189.68c-114.91-.94-59.37-144.13-159.44-148.91-39.7-1.9-73.84,34.44-73.35,73.45.38,30-.25,59.91-.2,89.86,0,4-3.47,5.92-7.13,5.92-3.44,0-7-1.81-7-5.66V113.75c-.65-29.12,9.83-56.2,33.31-74.14a91.2,91.2,0,0,1,71.68-16.86c94.43,20.46,48.22,144.73,143.07,149.84,33.61,1.81,63.54-28.18,62.93-62.93-1.23-70.66-95-87.56-120.59-23.53L201.07,63C251.45-.53,346.32,28.86,349.61,108.57A81.1,81.1,0,0,1,268.5,189.68Zm-43.61-80a44.5,44.5,0,1,1,44.5,44.5A44.5,44.5,0,0,1,224.89,109.66Z" style="fill:#fff;stroke:#154122;stroke-miterlimit:10;stroke-width:7px;fill-rule:evenodd"/></g></g></svg>
@@ -37,7 +37,6 @@
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
-     
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
@@ -98,7 +97,7 @@
         <section id="scrolltop" class="career-page-cover">
             <div class="career-page-cover__wrapper">
                 <div class="career-page-cover-img">
-                    <img src="/assets/resources/img/article-cover.jpg" alt="" class="page-cover-img" loading="lazy">
+                    <img src="{{asset('resources/img/karirPage/hiring.png')}}" alt="" class="page-cover-img" loading="lazy">
                 </div>
                 <div class="career-page-cover__content">
                     <div class="career-page-cover__overlay-top">
@@ -124,7 +123,7 @@
                 </div>
                 <div class="overview__bottom">
                     <div class="overview__bottom-img-wrapper">
-                        <img src="/assets/resources/img/Our-service-page-image.png" alt="" loading="lazy">
+                        <img src="{{asset('resources/img/karirPage/2.png')}}" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -132,7 +131,6 @@
         <!-- overview -->
 
         <!-- WHY WORK WITH US -->
-
         <section class="our-value">
             <div class="our-value__heading">
                 <div class="our-value-heading-items">

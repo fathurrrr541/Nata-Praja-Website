@@ -325,32 +325,37 @@
                 <div class="team__wrapper">
                     <div class="team__heading flxcenter-vertical-spcbtwn">
                         <div class="team__head">
-                            <div class="sub-title">LEADERSHIP TEAM</div>
+                            <div class="sub-title">TESTIMONIAL</div>
                             <h2>Meet the team.</h2>
                         </div>
                         <p class="team__caption">We’re an experienced global team who bring together our extensive knowledge in strategy, design, motion, engineering and growth. We’ve assisted global brands for decades, crafting exceptional innovative product experiences.</p>
                     </div>
                     <ul class="team__slider">
                         <li class="team_person">
-                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Budiyana</h3>
-                            <p class="person-position">Komisaris</p>
+                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="300" height="300">
+                            <div class="team_personTesti">"Bekerja sama dengan Nata Praja adalah keputusan terbaik yang pernah kami ambil. Tim mereka bukan hanya andal dalam strategi dan eksekusi, tapi juga punya jiwa pelayanan yang luar biasa. Mereka mampu menerjemahkan ide-ide kompleks menjadi solusi yang elegan dan mudah dipahami.</div>
+                            <div class="team_personInfo">
+                                <h3 class="person-name">Dewangga Surya</h3>
+                                <p class="person-position">Project Manager PT Surya Persudu</p>
+                            </div>
                         </li>
                         <li class="team_person">
-                            <img src="{{ asset('resources/img/landingPage/Team/harnoko.png') }}" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Harnoko Martono</h3>
-                            <p class="person-position">Komisaris</p>
+                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="300" height="300">
+                            <div class="team_personTesti">"Nata Praja bukan sekadar konsultan — mereka adalah mitra strategis yang memahami esensi perubahan. Setiap solusi yang mereka tawarkan dibangun atas riset yang kuat dan semangat melayani. Kami merasa didengarkan, dipandu, dan diberdayakan sepanjang prosesnya."</div>
+                            <div class="team_personInfo">
+                                <h3 class="person-name">Siti Nur Aisyah</h3>
+                                <p class="person-position">Direktur Inovasi Publik, Sagara Institute</p>
+                            </div>
                         </li>
                         <li class="team_person">
-                            <img src="{{ asset('resources/img/landingPage/Team/reza.png') }}" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Reza M Thamrin</h3>
-                            <p class="person-position">Komisaris</p>
+                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="300" height="300">
+                            <div class="team_personTesti">"Tim Nata Praja sangat humble dan komunikatif. Mereka tidak hanya menyelesaikan pekerjaan, tapi"</div>
+                            <div class="team_personInfo">
+                                <h3 class="person-name">Irvan Mahendra</h3>
+                                <p class="person-position">Community Organizer, Gerakan Kota Kolaboratif</p>
+                            </div>
                         </li>
-                        <li class="team_person">
-                            <img src="{{ asset('resources/img/landingPage/Team/pakRizal.png') }}" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Rizal M Ganjar</h3>
-                            <p class="person-position">CEO</p>
-                        </li>
+                        
                     </ul>
                 </div>
              </div>

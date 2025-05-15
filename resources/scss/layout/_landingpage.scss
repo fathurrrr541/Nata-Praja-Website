@@ -637,15 +637,24 @@
   will-change: transform;
 }
 .team .team_person {
-  flex: 0 0 auto; /* Pastikan setiap elemen tidak mengecil */
+  // flex: 0 0 auto; /* Pastikan setiap elemen tidak mengecil */
   text-align: left;
-  color: #fff;
-  width: 250px; /* Lebar setiap elemen slider */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2rem 1rem 1rem 1rem;
+  width: 350px; /* Lebar setiap elemen slider */
+  height: 400px;
 }
 .team .team_person img {
-  width: 100%;
-  border-radius: 10px;
-  height: 500px;
+  width: 90px;
+  border-radius: 100%;
+  height: 90px;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -653,16 +662,33 @@
   filter: grayscale(100%); /* Membuat gambar hitam putih */
   transition: filter 0.3s ease;
 }
+
+.team_personTesti{
+  text-align: center;
+  width: 90%;
+  font-size: .8rem;
+}
+
+.team_personInfo{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2rem;
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid black;
+}
+
 .team .person-name {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.25rem;
+ 
+  font-size: 1rem;
   font-weight: 600;
-  color: white;
   line-height: 90%;
   letter-spacing: -.03em;
 }
 .team .person-position {
-  font-size: .9375rem;
+  font-size: .7rem;
   line-height: 120%;
   opacity: 0.8;
 }
@@ -750,7 +776,21 @@
     }
   }
   .team .team_person {
-    width: 400px;
+    width: 500px;
+    height: 400px;
+    padding: 2rem 1rem;
+    
+    img {
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .team_personInfo {
+      width: 100%;
+      padding-top: 2rem;
+      border-top: 1px solid gray;
+    }
   }
 }
 
@@ -1201,5 +1241,7 @@
 // CONTENT
 // CONTENT
 // CONTENT
+
+
 
   

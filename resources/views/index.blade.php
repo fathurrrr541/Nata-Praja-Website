@@ -324,7 +324,7 @@
             
             <!--OUR-SERVICE-->
             
-            <!-- Team -->
+            <!-- Testi -->
              <div class="team">
                 <div class="team__wrapper">
                     <div class="team__heading flxcenter-vertical-spcbtwn">
@@ -363,7 +363,7 @@
                     </ul>
                 </div>
              </div>
-            <!-- Team -->
+            <!-- Testi -->
 
             <!-- CTA -->
              <div class="cta">

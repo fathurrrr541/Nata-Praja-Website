@@ -47,7 +47,7 @@
         <nav class="navbig">
             <div class="navbig__wrapper flxcenter-vertical-spcbtwn">
                 <div class="navbig-left logo-medium">
-                    <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                <a href="{{'/'}}"><img src="{{ asset('resources/img/LOGO NPS GREEN.png') }}" alt="NPS Logo" class="logo" id="logoBig2"></a> 
                 </div>
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
                     <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>

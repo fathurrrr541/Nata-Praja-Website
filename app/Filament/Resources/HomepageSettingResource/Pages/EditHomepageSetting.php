@@ -12,11 +12,9 @@ class EditHomepageSetting extends EditRecord
     protected static string $resource = HomepageSettingResource::class;
 
     // Override afterSave untuk mengalihkan setelah data disimpan
-    protected function afterSave()
+    protected function getRedirectUrl(): string
     {
-        // Redirect ke halaman index (tabel)
-        $this->redirectRoute('filament.admin.resources.homepage-settings.index');
-
+        return $this->getResource()::getUrl('index');
     }
 
     protected function getHeaderActions(): array

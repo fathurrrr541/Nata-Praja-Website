@@ -56,6 +56,9 @@
                     <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
                     <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
                 </ul>
+                <button id="toggle-dark">
+                        <i data-lucide="moon"></i>
+                    </button>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
                     <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Career" style="color: rgb(15, 41, 22);"><span>Career</span></a></li>
                     <a href="{{route('contact')}}" class="button-cta-2">CONTACT</a>
@@ -551,5 +554,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </body>
 </html>

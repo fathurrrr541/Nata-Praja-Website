@@ -12,9 +12,8 @@ class CreateHomepageSetting extends CreateRecord
     protected static string $resource = HomepageSettingResource::class;
 
      // Override afterSave untuk mengalihkan setelah data disimpan
-     protected function afterSave()
-     {
-         // Redirect ke halaman index (tabel)
-         return Redirect::route('filament.resources.homepage-settings.index');
-     }
+     protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }

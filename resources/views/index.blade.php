@@ -14,7 +14,8 @@
     <!-- icon -->
     @vite (['resources/scss/style.scss', 'resources/js/app.js'])
 </head>
-<body>
+<body class="{{ session('dark_mode') ? 'dark-mode' : '' }}">
+    @yield('content')
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
@@ -48,6 +49,9 @@
                     <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="About"><span>About</span></a></li>
                     <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
                     <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
+                    <button id="toggle-dark">
+                        <i data-lucide="moon"></i>
+                    </button>
                 </ul>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
                     <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Career"><span>Career</span></a></li>
@@ -565,5 +569,24 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('toggle-dark');
+
+  // Render pertama kali
+  lucide.createIcons();
+
+  toggleBtn.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark-mode');
+    const newIcon = isDark ? 'sun' : 'moon';
+
+    // Ganti isi tombol dengan icon baru
+    toggleBtn.innerHTML = `<i data-lucide="${newIcon}"></i>`;
+    lucide.createIcons();
+  });
+});
+</script> -->
+
 </body>
 </html>

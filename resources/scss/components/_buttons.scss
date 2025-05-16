@@ -225,3 +225,21 @@
     border: 2px solid var(--text-color);
     background-color: transparent;
 }
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: $color-text-light;
+    
+    body.dark-mode & {
+      color: $color-text-dark;
+    }
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  

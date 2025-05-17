@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Website PT Nata Praja Solusindo
 =======
 
@@ -27,5 +26,3 @@ Website ini dibangun menggunakan Laravel sebagai backend, dengan Filament sebaga
 - **HTML, JavaScript**
 - **Blade Templating Engine**
 - **MySQL / MariaDB**
-
->>>>>>> 89ba2e0 (Initial commit)

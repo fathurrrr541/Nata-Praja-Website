@@ -50,7 +50,7 @@
                 <div class="navbig-left logo-medium">
                 <a href="{{'/'}}"><img src="{{ asset('resources/img/LOGO NPS GREEN.png') }}" alt="NPS Logo" class="logo" id="logoBig2"></a> 
                 </div>
-                <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
+                <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn">
                     <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>
                     <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="About"><span>About</span></a></li>
                     <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
@@ -67,7 +67,7 @@
         </nav>
         <nav class="navmobile">
             <div class="navbig-left logo-medium">
-                <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                <a href="/"><img src="{{ asset('resources/img/LOGO NPS GREEN.png') }}" alt="NPS Logo" class="logo" id="logoMobile2"></a> 
             </div>
             <div class="hamburger-menu antimainstream" id="hamburger">
                 <a class="button-cta-1" style="color: rgb(15, 41, 22);">Menu</a>
@@ -79,7 +79,7 @@
                     <li><a href="{{route('artikel')}}">Article</a></li>
                     <li><a href="{{route('faq')}}">FAQ</a></li>
                     <li><a href="{{route('karir')}}">Career</a></li>
-                    <li><a href="{{route('contact')}}">CONTACT</a></li>
+                    <li><a href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -164,8 +164,11 @@
                     </div>
                 </div>
                 <div class="aboutuscard-items aboutus-card-five">
-                    <div class="aboutuscard-items-top">
+                    <div class="aboutuscard-items-top aboutuscard-items-top-iso">
                         <h2>ISO</h2>
+                        <div>-</div>
+                        <img src="{{asset('resources/img/isoHijau.png')}}" alt="VRC International"
+                        onmouseover="this.src='{{asset('resources/img/ISO.png')}}'" onmouseout="this.src='{{asset('resources/img/isoHijau.png')}}'">
                     </div>
                     <div class="aboutuscard-items-bottom">
                         <div class="list-icon"></div>

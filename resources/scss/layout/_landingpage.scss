@@ -149,6 +149,14 @@
                 line-height: 1;
                 margin-bottom: .5rem;
                 color: var(--green-light);
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                img {
+                  opacity: .75;
+                  width: 120px;
+                  height: 60px;
+                }
               }
               .about-us-items-caption {
                 font-size: .75rem;
@@ -218,6 +226,8 @@
                   font-size: 4.5rem;
                   line-height: 1;
                   margin-bottom: .5rem;
+                  display: flex;
+                  gap: 1rem;
                 }
                 
                 .about-us-items-caption {

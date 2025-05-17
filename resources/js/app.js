@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 /// Ambil elemen header
-const navBig = document.querySelector(".navbig");
+const navBig = document.querySelector(".navbigIndex");
 const navMobile = document.querySelector(".navmobile");
 const logoBig1 = document.getElementById("logoBigIndex");
-const logoMobile1 = document.getElementById("logoMobile");
+const logoMobile1 = document.getElementById("logoMobileIndex");
 
 // Variabel untuk menyimpan posisi scroll sebelumnya
 let lastScrollY = window.scrollY;
@@ -81,7 +81,7 @@ function updateHeader() {
   }
 
   // Mobile logo change
-  if (currentScroll > 0) {
+  if (currentScroll > 50) {
     navMobile.classList.remove("transparent");
     navMobile.classList.add("scrolled");
     logoMobile1.src = "/resources/img/LOGO NPS GREEN.png";
@@ -91,23 +91,13 @@ function updateHeader() {
     logoMobile1.src = "/resources/img/LOGO NPS WHITE.png";
   }
 
-  // Tambahkan atau hapus kelas "hidden" berdasarkan arah scroll (untuk kedua header)
-  if (currentScroll > lastScrollY) {
-    navBig.classList.add("hidden");
-    navMobile.classList.add("hidden");
-  } else {
-    navBig.classList.remove("hidden");
-    navMobile.classList.remove("hidden");
-  }
-
-  // Update posisi scroll terakhir
   lastScrollY = currentScroll;
 }
 
 // Jalankan logika saat DOM selesai dimuat
 document.addEventListener("DOMContentLoaded", () => {
   if (window.scrollY <= 50) {
-    navBig.classList.add("transparent");
+    navBigIndex.classList.add("transparent");
     navMobile.classList.add("transparent");
   }
   updateHeader(); // Periksa kondisi awal
@@ -151,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("scroll", updateNavMobile);
-
 
 //header animation
 //header animation
@@ -493,28 +482,28 @@ document.querySelectorAll('.scroll-link').forEach(link => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('toggle-dark');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const toggleBtn = document.getElementById('toggle-dark');
 
-  // Cek localStorage untuk status dark mode
-  if (localStorage.getItem('dark_mode') === 'true') {
-    document.body.classList.add('dark-mode');
-    toggleBtn.innerHTML = `<i data-lucide="sun"></i>`;
-  } else {
-    toggleBtn.innerHTML = `<i data-lucide="moon"></i>`;
-  }
+//   // Cek localStorage untuk status dark mode
+//   if (localStorage.getItem('dark_mode') === 'true') {
+//     document.body.classList.add('dark-mode');
+//     toggleBtn.innerHTML = `<i data-lucide="sun"></i>`;
+//   } else {
+//     toggleBtn.innerHTML = `<i data-lucide="moon"></i>`;
+//   }
 
-  lucide.createIcons();
+//   lucide.createIcons();
 
-  toggleBtn.addEventListener('click', () => {
-    const isDark = document.body.classList.toggle('dark-mode');
-    localStorage.setItem('dark_mode', isDark); // Simpan status
+//   toggleBtn.addEventListener('click', () => {
+//     const isDark = document.body.classList.toggle('dark-mode');
+//     localStorage.setItem('dark_mode', isDark); // Simpan status
 
-    const newIcon = isDark ? 'sun' : 'moon';
-    toggleBtn.innerHTML = `<i data-lucide="${newIcon}"></i>`;
-    lucide.createIcons();
-  });
-});
+//     const newIcon = isDark ? 'sun' : 'moon';
+//     toggleBtn.innerHTML = `<i data-lucide="${newIcon}"></i>`;
+//     lucide.createIcons();
+//   });
+// });
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   const toggleBtn = document.getElementById('toggle-dark');
@@ -531,6 +520,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //     lucide.createIcons();
 //   });
 // });
+
+
 
 
 

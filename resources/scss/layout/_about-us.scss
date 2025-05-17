@@ -91,6 +91,22 @@
     }
 }
 
+.aboutuscard-items-top-iso {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    div {
+        font-size: 2.9375rem;
+    }
+
+    img {
+        opacity: .9;
+        width: 90px;
+        height: 45px;
+    }
+}
+
 //about-us card
 //about-us card
 //about-us card
@@ -423,6 +439,22 @@
             font-size: 2.75rem !important;
             letter-spacing: -.015em;
             line-height: 90%;
+        }
+    }
+
+    .aboutuscard-items-top-iso {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+        div {
+            font-size: 2.9375rem;
+        }
+
+        img {
+            opacity: .9;
+            width: 120px;
+            height: 60px;
         }
     }
 

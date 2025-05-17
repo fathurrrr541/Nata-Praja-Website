@@ -39,7 +39,7 @@
     <!-- LOADING SCREEN -->
 
     <header id="#header" class="header">
-        <nav class="navbig">
+        <nav class="navbigIndex">
             <div class="navbig__wrapper flxcenter-vertical-spcbtwn">
                 <div class="navbig-left logo-medium">
                     <a href="{{'/'}}"><img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="NPS Logo" class="logo" id="logoBigIndex"></a> 
@@ -49,9 +49,9 @@
                     <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="About"><span>About</span></a></li>
                     <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
                     <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
-                    <button id="toggle-dark">
+                    {{-- <button id="toggle-dark">
                         <i data-lucide="moon"></i>
-                    </button>
+                    </button> --}}
                 </ul>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
                     <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Career"><span>Career</span></a></li>
@@ -73,7 +73,7 @@
                     <li><a href="{{route('artikel')}}">Article</a></li>
                     <li><a href="{{route('faq')}}">FAQ</a></li>
                     <li><a href="{{route('karir')}}">Career</a></li>
-                    <li><a href="{{route('contact')}}">CONTACT</a></li>
+                    <li><a href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -130,7 +130,12 @@
                                     <div class="about-us-items-caption">Professionals Driving Innovation and Excellence in Every Project</div>
                                 </li>
                                 <li class="about-us-items">
-                                    <div class="about-us-items-head">ISO</div>
+                                    <div class="about-us-items-head">
+                                        <div>ISO</div>
+                                        <div>-</div>
+                                        <img src="{{asset('resources/img/isoHijau.png')}}" alt="VRC International"
+                                        onmouseover="this.src='{{asset('resources/img/ISO.png')}}'" onmouseout="this.src='{{asset('resources/img/isoHijau.png')}}'">
+                                    </div>
                                     <div class="about-us-items-caption">Certified, Ensuring Top-Notch Data Security and Privacy</div>
                                 </li>
                             </ul>
@@ -263,7 +268,13 @@
                 <div class="services-mobile__wrapper-mobile flx2row">
                     <div class="services-mobile__left-mobile">
                         <div class="services-img-wrapper-mobile">
-                            <img src="/assets/resources/img/services/callcenter.jpg" alt="" data-index="1" class="active">
+                            <img src="{{asset('resources/img/landingPage/Services/callCenter.png')}}" alt="" data-index="1" class="active">
+                            <img src="{{asset('resources/img/landingPage/Services/validation.jpg')}}" alt="" data-index="2">
+                            <img src="{{asset('resources/img/landingPage/Services/dataEntry.jpg')}}" alt="" data-index="3">
+                            <img src="{{asset('resources/img/landingPage/Services/telemarketing.jpg')}}" alt="" data-index="4">
+                            <img src="{{asset('resources/img/landingPage/Services/liveChat.jpg')}}" alt="" data-index="5">
+                            <img src="{{asset('resources/img/landingPage/Services/deskCollection.jpg')}}" alt="" data-index="6">
+                            <img src="{{asset('resources/img/landingPage/Services/kyc.jpg')}}" alt="" data-index="7">
                         </div>
                     </div>
                     <div class="services-mobile__right-mobile flx2row">

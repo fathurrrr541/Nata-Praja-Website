@@ -46,15 +46,15 @@
                 <div class="navbig-left logo-medium">
                     <a href="{{'/'}}"><img src="{{ asset('resources/img/LOGO NPS GREEN.png') }}" alt="NPS Logo" class="logo" id="logoBig2"></a>
                 </div>
-                <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
+                <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn">
                     <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>
                     <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="About"><span>About</span></a></li>
                     <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
                     <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
                 </ul>
-                <button id="toggle-dark">
+                {{-- <button id="toggle-dark">
                         <i data-lucide="moon"></i>
-                    </button>
+                    </button> --}}
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
                     <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Career" style="color: rgb(15, 41, 22);"><span>Career</span></a></li>
                     <a href="{{route('contact')}}" class="button-cta-2">CONTACT</a>
@@ -75,7 +75,7 @@
                     <li><a href="{{route('artikel')}}">Article</a></li>
                     <li><a href="{{route('faq')}}">FAQ</a></li>
                     <li><a href="{{route('karir')}}">Career</a></li>
-                    <li><a href="{{route('contact')}}">CONTACT</a></li>
+                    <li><a href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </div>
         </nav>

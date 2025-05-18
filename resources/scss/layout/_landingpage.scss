@@ -406,7 +406,7 @@
 
 // mobile++
 
-@media (max-width: 1024px) {
+@media (max-width: 760px) {
   .services {
     display: none;
   }
@@ -495,6 +495,98 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services {
+    display: none;
+  }
+
+  .services-mobile {
+    padding: 2rem 10px 0 10px;
+    height: 100%;
+    display: block;
+
+    &__wrapper-mobile {
+      width: 100%;
+      height: 100%;
+      gap: 2rem;
+    }
+
+    &__left-mobile {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+
+      .services-img-wrapper-mobile {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        width: 80%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: fill;
+        }
+      }
+    }
+
+    &__right-mobile {
+      width: 100%;
+      gap: 1rem;
+      justify-content: center;
+      align-items: flex-start;
+
+        .services-headline {
+
+          h2 {
+            font-size: 2rem;
+            letter-spacing: -.025em;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: -.025em;
+            font-weight: 500;
+            color: var(--text-color);
+          }
+        }
+
+        .services-list-wrapper-mobile {
+          position: relative;
+          height: max-content;
+          width: 100%;
+    
+          .services-list-mobile {
+            display: grid;
+            grid-template-rows: repeat(7, 1fr);
+
+            .services-item {
+              border-bottom: 0.5px solid rgba(15, 41, 22, 0.4);
+              
+              a {
+                gap: 1rem;
+                padding: 1rem 0;
+                width: 100%;
+              
+                .services-name {
+                  font-size: 1.25rem;
+                  font-family: serif;
+                  letter-spacing: -.015em;
+                  font-weight: 100;
+                  color: var(--text-color);
+                }
+              }
+            }
+          }
+
+          .services-list:first-child {
+            border-top: 0.5px solid rgba(15, 41, 22, 0.4);
+          }
+        }
+    }
+  }
+}
+
 // SERVICE
 // SERVICE
 // SERVICE
@@ -506,6 +598,7 @@
 .client {
   overflow: hidden !important;
   height: 100px;
+  margin: 3rem 0;
 
   &__wrapper {
       padding: 0 10px;
@@ -577,6 +670,7 @@
 
   .client {
     padding: 0 3rem;
+    margin: 0rem !important;
   }
 
   .client__container {
@@ -594,6 +688,8 @@
 // Team
 // Team
 
+//mobile
+
 .team {
   background-color: var(--body-color-dark);
   overflow: hidden;
@@ -610,7 +706,8 @@
   width: 100%;
   padding: 0 10px;
   gap: 1rem;
-  align-items: start;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
   margin-bottom: 5rem;
 
@@ -716,6 +813,7 @@
       flex-direction: row;
       align-items: start;
       justify-content: flex-start;
+      text-align: start;
 
       .team__head {
         width: 60%;
@@ -820,10 +918,19 @@
 
 .carousel-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
   padding: 0 10px;
+
+  .article-head-left {
+    text-align: center;
+    margin-bottom: 10px;
+
+    .articleSubtitle {
+      margin-bottom: 10px !important;
+    }
+  }
 }
 
 .carousel-wrapper {
@@ -926,7 +1033,7 @@
 
 .sub-title {
   display: inline-block;
-  margin-bottom: .5rem;
+  // margin-bottom: .5rem;
 }
 
 .carousel-item h3 {
@@ -944,8 +1051,47 @@
   cursor: not-allowed;
 }
 
+/* Tablet View */
+@media (min-width: 760px) {
+  
+  .carousel-container {
+      padding: 0 0rem;
+      margin: 6rem auto;
+  }
+  .carousel-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0 50px;
+
+    .article-head-left {
+      text-align: center;
+      margin-bottom: 20px;
+      
+      .articleSubtitle {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+  
+  .carousel-item {
+    flex: 0 0 50%; /* Default: 1 card in mobile */
+    text-align: left;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .carousel-controls {
+    padding: 0 50px;
+  }
+}
+// ******************* //
+// ******************* //
+// ******************* //
+
 /* Desktop View */
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
 
   .carousel-container {
     padding: 0 0rem;
@@ -965,11 +1111,17 @@
 
     .sub-title {
       display: inline-block;
+      margin-bottom: .5rem !important;
     }
   }
 
   .carousel-header{
     margin-bottom: 3rem;
+
+    .article-head-left {
+        text-align: start;
+      }
+
     h2 {
       font-size: 3.2rem;
       letter-spacing: -.025em;
@@ -1012,7 +1164,7 @@
 
   
   .carousel-item {
-    flex: 0 0 33.33%; /* 3 cards in desktop */
+    flex: 0 0 33.33% !important; /* 3 cards in desktop */
     padding: 0 3rem;
   }
 
@@ -1183,11 +1335,11 @@
     border: .75px solid var(--text-color);
   }
 }
-
+//tablet
 @media (min-width: 768px) {
 
   .cta {
-    height: 90dvh;
+    height: 50dvh;
 
     &__container {
       flex-direction: row;
@@ -1209,19 +1361,89 @@
       }
 
       .cta-card-content {
-        padding-left: 7rem;
+        padding-left: 4rem;
         align-items:start;
+        gap: 0rem;
   
         h2 {
           width: 70%;
           font-weight: 400;
           line-height: 98%;
-          font-size: 3.2rem;
+          font-size: 2.1rem;
+          height: 150px;
+         
         }
   
         p {
           width: 70%;
-          font-size: 1rem !important;
+          height: 100px;
+          font-size: .9rem !important;
+          
+        }
+      }
+
+      .cta-card-button-wrapper{
+        height: 17%;
+  
+        .cta-card-button {
+          width: 80%;
+  
+          h3 {
+            font-size: 1rem !important;
+          }
+  
+          i {
+            font-size: .8rem;
+          }
+        }
+      }
+    }
+  }
+}
+//tablet
+@media (min-width: 1024px) {
+
+  .cta {
+    height: 90dvh;
+
+    &__container {
+      flex-direction: row;
+      height: 100%;
+    }
+
+    &__card {
+      width: 50%;
+      height: 100%;
+
+      .cta-card-head {
+        // margin-bottom: 30px;
+        .cta-head-left {
+          font-size: 1rem;
+        }
+        .cta-head-right {
+          font-size: 1rem;
+        }
+      }
+
+      .cta-card-content {
+        padding-left: 5rem;
+        align-items:start;
+        gap: 1.5rem;
+  
+        h2 {
+          width: 75%;
+          font-weight: 400;
+          line-height: 98%;
+          font-size: 3rem;
+          height: fit-content;
+        
+        }
+  
+        p {
+          width: 70%;
+          font-size: .9rem !important;
+          height:fit-content;
+         
         }
       }
 

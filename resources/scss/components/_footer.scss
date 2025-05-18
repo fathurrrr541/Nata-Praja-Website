@@ -129,7 +129,7 @@
       .footer-mobile-one {
         padding: 1rem 0;
         border-bottom: 1px solid #ffffff5e;
-
+        
         .footer__logo {
           display: flex;
           align-items: center;
@@ -220,8 +220,11 @@
   }
 }
 
-@media (max-width:960px) {
+@media (max-width:1030px) {
 
+  .footer {
+    height: 70dvh;
+  }
   .footer-right-bottom {
     width: 350px !important;
 

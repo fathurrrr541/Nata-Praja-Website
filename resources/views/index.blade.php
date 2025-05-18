@@ -341,9 +341,9 @@
                     <div class="team__heading flxcenter-vertical-spcbtwn">
                         <div class="team__head">
                             <div class="sub-title">TESTIMONIAL</div>
-                            <h2>Meet the team.</h2>
+                            <h2>Client Voices.</h2>
                         </div>
-                        <p class="team__caption">We’re an experienced global team who bring together our extensive knowledge in strategy, design, motion, engineering and growth. We’ve assisted global brands for decades, crafting exceptional innovative product experiences.</p>
+                        <p class="team__caption">Authentic stories and honest feedback from our trusted partners who have experienced real impact, growth, and collaboration through our solutions across industries and project scales.</p>
                     </div>
                     <ul class="team__slider">
                         <li class="team_person">
@@ -420,7 +420,7 @@
                 <!-- Header Section -->
                 <div class="carousel-header">
                     <div class="article-head-left">
-                        <div class="sub-title">COMPANY ARTICLE</div>
+                        <div class="sub-title articleSubtitle">COMPANY ARTICLE</div>
                         <h2>Latest Article</h2>
                     </div>
                     <div class="controls controls-desktop">

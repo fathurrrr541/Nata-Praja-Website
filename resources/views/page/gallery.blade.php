@@ -144,30 +144,80 @@
     <!-- Main -->
 
     <!-- Footer -->
-    <footer class="footer">        
-        <div class="footer__containerdesktop desktop__footer flx2col-spcbtwn">
-            <div class="footer__left">
-                <h2>#Jadi yang kamu butuhkan.</h2>
-                <div class="profil-deskription">
+        <footer class="footer">
+            <div class="footer__containerdesktop desktop__footer flx2col-spcbtwn">
+                <div class="footer__left">
+                    <h2>#Jadi yang kamu butuhkan.</h2>
+                    <div class="profil-deskription">
+                        <div class="footer__logo">
+                            <div class="footer__contenttoplogo">
+                                <img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="" class="logowhite">
+                            </div>
+                            <div class="footer__logotype">NATA PRAJA</div>
+                        </div>
+                        <div class="logo-caption">
+                            "PT Nata Praja Solusindo adalah perusahaan yang berorientasi pada pelanggan. Kami
+                            memahami bahwa setiap klien memiliki kebutuhan yang beragam, oleh karena itu kami
+                            menawarkan solusi yang disesuaikan dengan kebutuhan spesifik masing-masing klien."
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer-right-top">
+                        <div class="footer-nav-company footer-nav-wrapper">
+                            <ul class="footer-nav-head">Company</ul>
+                            <ul class="footer-nav-list">
+                                <li><a href="/" class="footer-nav-items">Home</a></li>
+                                <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
+                                <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
+                                <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
+                                <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-work footer-nav-wrapper">
+                            <ul class="footer-nav-head">Work</ul>
+                            <ul class="footer-nav-list">
+                                <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
+                                <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-social footer-nav-wrapper">
+                            <ul class="footer-nav-head">Social</ul>
+                            <ul class="footer-nav-list">
+                                <li><a href="https://www.instagram.com/ptnataprajasolusindo/" target="_blank" class="footer-nav-items">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/nata-praja-solusindo" target="_blank" class="footer-nav-items">Linkedln</a></li>
+                                <li><a href="https://www.facebook.com/nataprajasolusindo.NPS" target="_blank" class="footer-nav-items">Facebook</a></li>
+                                <li><a href="https://www.youtube.com/@NPSJogja" target="_blank" class="footer-nav-items">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-right-bottom">
+                        <div class="footer-nav-info">
+                            <ul class="footer-address">Kledokan RT 01/ RW 07, Umbulmartani, Kec. Ngemplak, Kab Sleman, Daerah Istimewa Yogyakarta</ul>
+                            <span class="line"></span>
+                            <ul class="contact">
+                                <li>(0274) 6000 027</li>
+                                <li>nps@natapraja.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__containermobile">
+                <div class="footer-mobile-one">
                     <div class="footer__logo">
                         <div class="footer__contenttoplogo">
                             <img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="" class="logowhite">
                         </div>
                         <div class="footer__logotype">NATA PRAJA</div>
                     </div>
-                    <div class="logo-caption">
-                        "PT Nata Praja Solusindo adalah perusahaan yang berorientasi pada pelanggan. Kami
-                        memahami bahwa setiap klien memiliki kebutuhan yang beragam, oleh karena itu kami
-                        menawarkan solusi yang disesuaikan dengan kebutuhan spesifik masing-masing klien."
-                    </div>
                 </div>
-            </div>
-            <div class="footer__right">
-                <div class="footer-right-top">
+                <div class="footer-mobile-two">
                     <div class="footer-nav-company footer-nav-wrapper">
                         <ul class="footer-nav-head">Company</ul>
                         <ul class="footer-nav-list">
-                            <li><a href="/" class="footer-nav-items">Home</a></li>
+                            <li><a href="/index.html" class="footer-nav-items">Home</a></li>
                             <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
                             <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
                             <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
@@ -181,82 +231,32 @@
                             <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="footer-nav-social footer-nav-wrapper">
+                </div>
+                <div class="footer-mobile-three">
+                    <div class="h2-wrapper">
+                        <h2 class="footer-mobile-three-h2">#Jadi yang kamu butuhkan.</h2>
+                    </div>
+                </div>
+                <div class="footer-mobile-four">
+                    <div class="footer-navmobile-social">
                         <ul class="footer-nav-head">Social</ul>
-                        <ul class="footer-nav-list">
-                            <li><a href="" class="footer-nav-items">Instagram</a></li>
-                            <li><a href="" class="footer-nav-items">Linkedln</a></li>
-                            <li><a href="" class="footer-nav-items">Facebook</a></li>
-                            <li><a href="" class="footer-nav-items">Youtube</a></li>
+                        <ul class="footer-navmobile-list">
+                            <li><a href="https://www.instagram.com/ptnataprajasolusindo/" target="_blank" class="footer-navmobile-items">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/nata-praja-solusindo" target="_blank" class="footer-nav-items">Linkedln</a></li>
+                            <li><a href="https://www.facebook.com/nataprajasolusindo.NPS" target="_blank" class="footer-nav-items">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@NPSJogja" target="_blank" class="footer-nav-items">Youtube</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer-right-bottom">
-                    <div class="footer-nav-info">
-                        <ul class="footer-address">Kledokan RT 01/ RW 07, Umbulmartani, Kec. Ngemplak, Kab Sleman, Daerah Istimewa Yogyakarta</ul>
-                        <span class="line"></span>
-                        <ul class="contact">
-                            <li>(0274) 6000 027</li>
-                            <li>nps@natapraja.com</li>
-                        </ul>
-                    </div>
+                <div class="footer-mobile-five">
+                    <div class="copyright footer-nav-head">&copy 2024, Nata Praja, All Rights Reserved.</div>
+                    <a href="#hero" class="scrolltop">
+                        <p>Back to top</p>
+                        <i class="fa-solid fa-arrow-up"></i>
+                    <a>
                 </div>
             </div>
-        </div>
-
-        <div class="footer__containermobile">
-            <div class="footer-mobile-one">
-                <div class="footer__logo">
-                    <div class="footer__contenttoplogo">
-                        <img src="./assets/resources/img/LOGO NPS WHITE.png" alt="" class="logowhite">
-                    </div>
-                    <div class="footer__logotype">NATA PRAJA</div>
-                </div>
-            </div>
-            <div class="footer-mobile-two">
-                <div class="footer-nav-company footer-nav-wrapper">
-                    <ul class="footer-nav-head">Company</ul>
-                    <ul class="footer-nav-list">
-                        <li><a href="/" class="footer-nav-items">Home</a></li>
-                        <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
-                        <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
-                        <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
-                        <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-work footer-nav-wrapper">
-                    <ul class="footer-nav-head">Work</ul>
-                    <ul class="footer-nav-list">
-                        <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
-                        <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-mobile-three">
-                <div class="h2-wrapper">
-                    <h2 class="footer-mobile-three-h2">#Jadi yang kamu butuhkan.</h2>
-                </div>
-            </div>
-            <div class="footer-mobile-four">
-                <div class="footer-navmobile-social">
-                    <ul class="footer-nav-head">Social</ul>
-                    <ul class="footer-navmobile-list">
-                        <li><a href="" class="footer-navmobile-items">Instagram</a></li>
-                        <li><a href="" class="footer-nav-items">Linkedln</a></li>
-                        <li><a href="" class="footer-nav-items">Facebook</a></li>
-                        <li><a href="" class="footer-nav-items">Youtube</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-mobile-five">
-                <div class="copyright footer-nav-head">&copy 2024, Nata Praja, All Rights Reserved.</div>
-                <a href="#hero" class="scrolltop">
-                    <p>Back to top</p>
-                    <i class="fa-solid fa-arrow-up"></i>
-                <a>
-            </div>
-        </div>
-    </footer>
+        </footer>
     <!-- Footer -->
 
      

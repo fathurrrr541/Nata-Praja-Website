@@ -187,7 +187,56 @@
 //maps
 //maps
 
-@media (min-width: 678px) {
+@media (min-width: 678px) and (max-width: 1023px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 5rem 5rem 5rem 5rem !important;
+    }
+
+    .content-right-item {
+        border-bottom: none;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .contact-left{
+        padding-right: 0rem;
+    }
+    .contact-right {
+        margin-top: 4rem;
+        padding-left: 0rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        
+
+        .content-right-item {
+            width: 50%;
+            align-items: center;
+            border: 1px solid var(--gray);
+            padding: 1rem;
+            height: 200px;
+            justify-content: center;
+          
+            .content-right-head {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+
+    .contact-form button {
+        align-self:flex-end;
+    }
+
+    .maps {
+        padding: 0 3rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 1023px) {
     .contact-section {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;

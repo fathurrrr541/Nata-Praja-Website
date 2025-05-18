@@ -123,7 +123,16 @@
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 678px) {
+    
+    .about-us__team-card-img {
+            height: 350px !important;
+            width: 90% !important;
+            
+    }
+}
+
+@media (min-width: 1080px) {
 
     .about-us__team-card {
         display: flex;
@@ -132,6 +141,7 @@
     
         .about-us__team-card-img {
             height: 300px;
+            width: 100% !important;
             aspect-ratio: 372/425;
 
             img {

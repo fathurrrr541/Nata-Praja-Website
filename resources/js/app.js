@@ -192,6 +192,7 @@ gsap.to (".hero__caption",{
 
 //our-team slider
 
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector(".team__slider");
   const slides = Array.from(slider.children);
@@ -249,6 +250,65 @@ document.addEventListener("DOMContentLoaded", () => {
   // Memulai animasi secara otomatis setelah drag selesai
   animation.play();
 });
+=======
+// document.addEventListener("DOMContentLoaded", () => {
+//   const slider = document.querySelector(".team__slider");
+//   const slides = Array.from(slider.children);
+//   const slideWidth = slides[0].offsetWidth + 48; // Lebar slider + jarak antar elemen
+//   const totalSlides = slides.length;
+
+//   // Gandakan elemen untuk menciptakan ilusi infinite scrolling
+//   slides.forEach((slide) => {
+//       const clone = slide.cloneNode(true);
+//       slider.appendChild(clone); // Tambahkan salinan elemen ke akhir slider
+//   });
+
+//   // Membuat animasi infinite dengan gsap
+//   const animation = gsap.to(slider, {
+//       x: `-=${slideWidth * totalSlides}`, // Geser sejauh total lebar slider asli
+//       duration: totalSlides * 5, // Durasi animasi
+//       ease: "none", // Gerakan linear
+//       repeat: -1, // Infinite loop
+//       modifiers: {
+//           x: (xValue) => {
+//               const parsedX = parseFloat(xValue);
+//               const maxOffset = slideWidth * totalSlides;
+//               return `${parsedX % maxOffset}px`; // Modulo untuk menciptakan loop
+//           },
+//       },
+//       paused: true // Mulai animasi dalam keadaan terjeda
+//   });
+  
+
+//   // Membuat slider dapat draggable
+//   Draggable.create(slider, {
+//       type: "x",  // Hanya gerakan horizontal
+//       edgeResistance: 0.65, // Resistensi saat menyeret
+//       inertia: true, // Menambahkan efek inertial (lambat berhenti)
+//       onDrag: () => {
+//           animation.pause(); // Hentikan animasi saat drag dimulai
+//       },
+//       onRelease: () => {
+//           gsap.to(slider, {
+//               x: `-=${slideWidth * totalSlides}`, // Geser sejauh total lebar slider asli
+//               duration: totalSlides * 5, // Durasi animasi
+//               ease: "none", // Gerakan linear
+//               repeat: -1, // Infinite loop
+//               modifiers: {
+//                   x: (xValue) => {
+//                       const parsedX = parseFloat(xValue);
+//                       const maxOffset = slideWidth * totalSlides;
+//                       return `${parsedX % maxOffset}px`; // Modulo untuk menciptakan loop
+//                   },
+//               },
+//           });
+//       },
+//   });
+
+//   // Memulai animasi secara otomatis setelah drag selesai
+//   animation.play();
+// });
+>>>>>>> c01359942576a422e48b40a80111cbc8498c1007
 
 //our-team slider
 
@@ -525,5 +585,8 @@ document.querySelectorAll('.scroll-link').forEach(link => {
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c01359942576a422e48b40a80111cbc8498c1007

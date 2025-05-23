@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+<<<<<<< HEAD
+=======
+    <!-- Lightbox2 (Gambar) -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- GLightbox (Video) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+>>>>>>> c01359942576a422e48b40a80111cbc8498c1007
     <!-- icon -->
     @vite (['resources/scss/style.scss', 'resources/js/app.js'])
 </head>
@@ -109,6 +116,7 @@
         </section>
         <section id="scrollcontent" class="gallery">
             <div class="gallery__wrapper">
+<<<<<<< HEAD
                 <div class="gallerycontentCard">
                     <div class="glc-left">
                         <h1>Our Facilities</h1>
@@ -137,6 +145,98 @@
                         <img src="{{asset('resources/img/activity/4.JPG')}}" loading="lazy" alt="">
                         <img src="{{asset('resources/img/activity/5.JPG')}}" loading="lazy" alt="">
                     </div>
+=======
+   
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="facility">Facility</button>
+                    <button data-filter="activity">Activity</button>
+                    <button data-filter="workstation">Workstation</button>
+                    <button data-filter="video">Video</button>
+                </div>
+
+                <!-- Gallery -->
+                <div class="gallery-grid">
+
+                    <!-- Facility -->
+                    <div class="gallery-item facility">
+                        <a href="{{ asset('resources/img/facility/2.JPG') }}" class="glightbox" data-gallery="facility">
+                            <img src="{{ asset('resources/img/facility/2.JPG') }}" alt="Facility">
+                        </a>
+                    </div>
+                    <div class="gallery-item facility">
+                        <a href="{{ asset('resources/img/facility/3.JPG') }}" class="glightbox" data-gallery="facility">
+                            <img src="{{ asset('resources/img/facility/3.JPG') }}" alt="Facility">
+                        </a>
+                    </div>
+
+                    <!-- Activity -->
+                    <div class="gallery-item activity">
+                        <a href="{{ asset('resources/img/activity/1.JPG') }}" class="glightbox" data-gallery="activity">
+                            <img src="{{ asset('resources/img/activity/1.JPG') }}" alt="Activity">
+                        </a>
+                    </div>
+                    <div class="gallery-item activity">
+                        <a href="{{ asset('resources/img/activity/2.JPG') }}" class="glightbox" data-gallery="activity">
+                            <img src="{{ asset('resources/img/activity/2.JPG') }}" alt="Activity">
+                        </a>
+                    </div>
+                    <div class="gallery-item activity">
+                        <a href="{{ asset('resources/img/activity/3.PNG') }}" class="glightbox" data-gallery="activity">
+                            <img src="{{ asset('resources/img/activity/3.PNG') }}" alt="Activity">
+                        </a>
+                    </div>
+                    <div class="gallery-item activity">
+                        <a href="{{ asset('resources/img/activity/4.JPG') }}" class="glightbox" data-gallery="activity">
+                            <img src="{{ asset('resources/img/activity/4.JPG') }}" alt="Activity">
+                        </a>
+                    </div>
+                    <div class="gallery-item activity">
+                        <a href="{{ asset('resources/img/activity/5.JPG') }}" class="glightbox" data-gallery="activity">
+                            <img src="{{ asset('resources/img/activity/5.JPG') }}" alt="Activity">
+                        </a>
+                    </div>
+
+                    <!-- Workstation -->
+                    <div class="gallery-item workstation">
+                        <a href="{{ asset('resources/img/facility/1.JPG') }}" class="glightbox" data-gallery="workstation">
+                            <img src="{{ asset('resources/img/facility/1.JPG') }}" alt="Workstation">
+                        </a>
+                    </div>
+                    <div class="gallery-item workstation">
+                        <a href="{{ asset('resources/img/facility/3.JPG') }}" class="glightbox" data-gallery="workstation">
+                            <img src="{{ asset('resources/img/facility/3.JPG') }}" alt="Workstation">
+                        </a>
+                    </div>
+                    <div class="gallery-item workstation">
+                        <a href="{{ asset('resources/img/facility/4.JPG') }}" class="glightbox" data-gallery="workstation">
+                            <img src="{{ asset('resources/img/facility/4.JPG') }}" alt="Workstation">
+                        </a>
+                    </div>
+                    <div class="gallery-item workstation">
+                        <a href="{{ asset('resources/img/facility/5.JPG') }}" class="glightbox" data-gallery="workstation">
+                            <img src="{{ asset('resources/img/facility/5.JPG') }}" alt="Workstation">
+                        </a>
+                    </div>
+                    <!-- Video -->
+                    <div class="gallery-item video">
+                        <a href="https://youtu.be/pjIqqB1Z5ho" class="glightbox" data-type="video">
+                            <img src="https://img.youtube.com/vi/pjIqqB1Z5ho/hqdefault.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                    <div class="gallery-item video">
+                        <a href="https://youtu.be/z9y5sHw-58c" class="glightbox" data-type="video">
+                            <img src="https://img.youtube.com/vi/z9y5sHw-58c/hqdefault.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                    <div class="gallery-item video">
+                        <a href="https://youtu.be/d6A0-hethdY" class="glightbox" data-type="video">
+                            <img src="https://img.youtube.com/vi/d6A0-hethdY/hqdefault.jpg" alt="Video Thumbnail">
+                        </a>
+                    </div>
+
+>>>>>>> c01359942576a422e48b40a80111cbc8498c1007
                 </div>
             </div>
         </section>
@@ -265,5 +365,40 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<<<<<<< HEAD
+=======
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+ <script>
+    const buttons = document.querySelectorAll('.filter-buttons button');
+    const items = document.querySelectorAll('.gallery-item');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        items.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: false,
+      zoomable: true,
+      autoplayVideos: true,
+    });
+  </script>
+
+
+>>>>>>> c01359942576a422e48b40a80111cbc8498c1007
 </body>
 </html>

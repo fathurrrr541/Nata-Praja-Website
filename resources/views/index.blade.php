@@ -347,32 +347,6 @@
                     </div>
                     <ul class="team__slider">
                         <li class="team_person">
-<<<<<<< HEAD
-                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="300" height="300">
-                            <div class="team_personTesti">"Bekerja sama dengan Nata Praja adalah keputusan terbaik yang pernah kami ambil. Tim mereka bukan hanya andal dalam strategi dan eksekusi, tapi juga punya jiwa pelayanan yang luar biasa. Mereka mampu menerjemahkan ide-ide kompleks menjadi solusi yang elegan dan mudah dipahami.</div>
-                            <div class="team_personInfo">
-                                <h3 class="person-name">Dewangga Surya</h3>
-                                <p class="person-position">Project Manager PT Surya Persudu</p>
-                            </div>
-                        </li>
-                        <li class="team_person">
-                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="300" height="300">
-                            <div class="team_personTesti">"Nata Praja bukan sekadar konsultan — mereka adalah mitra strategis yang memahami esensi perubahan. Setiap solusi yang mereka tawarkan dibangun atas riset yang kuat dan semangat melayani. Kami merasa didengarkan, dipandu, dan diberdayakan sepanjang prosesnya."</div>
-                            <div class="team_personInfo">
-                                <h3 class="person-name">Siti Nur Aisyah</h3>
-                                <p class="person-position">Direktur Inovasi Publik, Sagara Institute</p>
-                            </div>
-                        </li>
-                        <li class="team_person">
-                            <img src="{{ asset('resources/img/landingPage/Team/budiyana.png') }}" alt="" loading="lazy" width="300" height="300">
-                            <div class="team_personTesti">"Tim Nata Praja sangat humble dan komunikatif. Mereka tidak hanya menyelesaikan pekerjaan, tapi"</div>
-                            <div class="team_personInfo">
-                                <h3 class="person-name">Irvan Mahendra</h3>
-                                <p class="person-position">Community Organizer, Gerakan Kota Kolaboratif</p>
-                            </div>
-                        </li>
-                        
-=======
                             <img src="{{ asset('resources/img/testi1.jpeg') }}" alt="" loading="lazy" width="300" height="300">
                             <div class="team_personTesti">"Kami telah bekerja sama dengan Nata Praja sejak Maret 2023 dalam layanan call center khusus asuransi. Dibandingkan dengan BPO lain yang pernah kami gunakan, Nata Praja memberikan transparansi data yang luar biasa. Kami bisa memantau data real-time, baik panggilan masuk maupun terabaikan. Selama bekerja sama, pengalaman kami sangat positif. Sertiap permintaan kami sebagai klien selalu cepat diakomodasi oleh tim Nata Praja."</div>
                             <div class="team_personInfo">
@@ -380,7 +354,7 @@
                                 <p class="person-position">Head Department of Customer Service & Case Monitoring</p>
                             </div>
                         </li>
->>>>>>> c01359942576a422e48b40a80111cbc8498c1007
+
                     </ul>
                 </div>
              </div>

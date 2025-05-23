@@ -12,13 +12,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
-<<<<<<< HEAD
-=======
+
     <!-- Lightbox2 (Gambar) -->
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
     <!-- GLightbox (Video) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
->>>>>>> c01359942576a422e48b40a80111cbc8498c1007
+
     <!-- icon -->
     @vite (['resources/scss/style.scss', 'resources/js/app.js'])
 </head>
@@ -116,37 +115,6 @@
         </section>
         <section id="scrollcontent" class="gallery">
             <div class="gallery__wrapper">
-<<<<<<< HEAD
-                <div class="gallerycontentCard">
-                    <div class="glc-left">
-                        <h1>Our Facilities</h1>
-                    </div>
-                    <div class="glc-right">
-                        <img src="{{asset('resources/img/facility/2.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/3.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/4.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/5.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/6.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/7.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/8.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/9.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/facility/10.JPG')}}" loading="lazy" alt="">
-                        
-                    </div>
-                </div>
-                <div class="gallerycontentCard">
-                    <div class="glc-left">
-                        <h1>Our Activities</h1>
-                    </div>
-                    <div class="glc-right">
-                        <img src="{{asset('resources/img/activity/1.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/activity/2.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/activity/3.png')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/activity/4.JPG')}}" loading="lazy" alt="">
-                        <img src="{{asset('resources/img/activity/5.JPG')}}" loading="lazy" alt="">
-                    </div>
-=======
-   
                 <!-- Filter Buttons -->
                 <div class="filter-buttons">
                     <button class="active" data-filter="all">All</button>
@@ -183,8 +151,8 @@
                         </a>
                     </div>
                     <div class="gallery-item activity">
-                        <a href="{{ asset('resources/img/activity/3.PNG') }}" class="glightbox" data-gallery="activity">
-                            <img src="{{ asset('resources/img/activity/3.PNG') }}" alt="Activity">
+                        <a href="{{ asset('resources/img/activity/3.png') }}" class="glightbox" data-gallery="activity">
+                            <img src="{{ asset('resources/img/activity/3.png') }}" alt="Activity">
                         </a>
                     </div>
                     <div class="gallery-item activity">
@@ -235,8 +203,6 @@
                             <img src="https://img.youtube.com/vi/d6A0-hethdY/hqdefault.jpg" alt="Video Thumbnail">
                         </a>
                     </div>
-
->>>>>>> c01359942576a422e48b40a80111cbc8498c1007
                 </div>
             </div>
         </section>
@@ -365,40 +331,33 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-<<<<<<< HEAD
-=======
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
- <script>
-    const buttons = document.querySelectorAll('.filter-buttons button');
-    const items = document.querySelectorAll('.gallery-item');
+    <script>
+  const buttons = document.querySelectorAll('.filter-buttons button');
+  const items = document.querySelectorAll('.gallery-item');
 
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Atur tombol aktif
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
 
-        const filter = btn.getAttribute('data-filter');
+      const filter = button.getAttribute('data-filter');
 
-        items.forEach(item => {
-          if (filter === 'all' || item.classList.contains(filter)) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
+      items.forEach(item => {
+        const matches = filter === 'all' || item.classList.contains(filter);
+
+        if (matches) {
+          item.classList.remove('hidden'); // Muncul di layout
+          setTimeout(() => item.classList.remove('hide'), 100); // Animasi masuk
+        } else {
+          item.classList.add('hide'); // Animasi keluar
+          setTimeout(() => item.classList.add('hidden'), 100); // Sembunyikan total
+        }
       });
     });
-
-    const lightbox = GLightbox({
-      touchNavigation: true,
-      loop: false,
-      zoomable: true,
-      autoplayVideos: true,
-    });
-  </script>
-
-
->>>>>>> c01359942576a422e48b40a80111cbc8498c1007
+  });
+</script>
 </body>
 </html>

@@ -25,11 +25,10 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-<<<<<<< HEAD
-            ->path('admin')
-=======
+
+
             ->path('$2y$10$KkUWjNVVeEBB1dmj2P0s1eph7v9UbF3Z2tbHug7c9bgKCqHkl/s6u')
->>>>>>> c01359942576a422e48b40a80111cbc8498c1007
+
             ->login()
             ->colors([
                 'primary' => Color::Teal,
